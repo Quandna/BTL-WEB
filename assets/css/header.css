@@ -1,0 +1,92 @@
+/* Navbar item */
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #333;
+}
+    /* Logo */
+.header__navbar-logo {
+    flex: 2;
+    justify-content:center;
+    text-align: center;
+}
+
+    /* List Item */
+.header__navbar-list {
+    display: flex;
+    flex: 3;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin: 0;
+    
+}
+
+.header__navbar-list--item {
+    line-height: 75px;
+    border-bottom: 3px solid transparent;
+}
+
+.header__navbar-list--item:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #333;
+    color: gray;
+}
+
+    /* Search */
+.header__navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex: 3;
+    position: relative;
+    height: 100%;
+    
+}
+    /* Action */
+.header__navbar-action {
+    flex: 0.5;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.header__navbar-action--like,
+.header__navbar-action--cart {
+    text-decoration: none;
+    color: inherit;
+}
+
+    /* Search BTN */
+.header__navbar-search-icon {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    align-items: baseline;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    left: calc(85% - 5px);
+}
+
+.header__navbar-search-icon:hover {
+    columns: rgba(42, 40, 40, 0.8);
+    font-size: 0.9rem;
+}
+
+    /* Search-input */
+.header__search-input {
+    border-radius: 15px;
+    width: 80%;
+    height: 100%;
+    min-width: 200px;
+    outline: none;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    font-size: 1.4rem;
+    padding: 3px 10px;
+}

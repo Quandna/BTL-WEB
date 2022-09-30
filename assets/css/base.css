@@ -1,0 +1,92 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #EE4D2D;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+html {
+    /* Hack 1 rem = 10px ==> 12 px = 1.2rem */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif; /*sans-serif là chữ k có chân  */
+    box-sizing: border-box;
+}
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto; /* tu dong can giua */
+}
+
+.grid__full-width {
+    /* neu khong muon su dung width == 1200px */
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* TEST */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+
+
+/* Selector */
+* {
+    /*  apply tat ca cac thuoc tinh css len cac phan tu html duoc nhung tren file base*/
+    box-sizing: inherit; /*ke thua border-box ben duoi*/
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+        
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
